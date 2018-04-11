@@ -149,11 +149,36 @@
                     <navigationItem key="navigationItem" id="1T6-Lw-Ai7"/>
                     <connections>
                         <outlet property="homeCollection" destination="ypL-rz-dKJ" id="ePy-j5-F5j"/>
+                        <segue destination="58p-3T-bMh" kind="show" identifier="toTicketViewController" id="Fll-ge-s3T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cI-9y-E9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-47.200000000000003" y="-118.29085457271366"/>
+        </scene>
+        <!--Ticket View Controller-->
+        <scene sceneID="7bM-KQ-Xob">
+            <objects>
+                <viewController id="58p-3T-bMh" customClass="TicketViewController" customModule="Keystone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rag-wO-MIH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ticket View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DE-wh-B5O">
+                                <rect key="frame" x="95" y="231" width="174" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="L5H-IT-Btp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nn4-71-FRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653.60000000000002" y="-119.1904047976012"/>
         </scene>
     </scenes>
     <resources>

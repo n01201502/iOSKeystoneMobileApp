@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController,UICollectionViewDataSource{
+class HomeViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate{
     @IBOutlet weak var homeCollection: UICollectionView!
     
     let array:[String] = ["user", "camera", "inventory", "list", "add", "call"]
@@ -43,4 +43,12 @@ class HomeViewController: UIViewController,UICollectionViewDataSource{
         cell.imageViewCell.image = UIImage(named: array[indexPath.row] + ".png")
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Cell Clicked with Index: " + String(indexPath.row))
+        if(indexPath.row == 3) {
+                performSegue(withIdentifier: "toTicketViewController", sender: nil)
+        }
+    }
+    
 }
