@@ -7,28 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06A14D6D2074B3E20039C2BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A14D6C2074B3E20039C2BA /* AppDelegate.swift */; };
+		06417AC72087C14D0043BDB5 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06417AC62087C14D0043BDB5 /* TicketViewController.swift */; };
+		06417AC92087C25E0043BDB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06417AC82087C25E0043BDB5 /* AppDelegate.swift */; };
+		06417ACB2087DBDB0043BDB5 /* ApiHttpPostUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06417ACA2087DBDB0043BDB5 /* ApiHttpPostUtil.swift */; };
 		06A14D6F2074B3E20039C2BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A14D6E2074B3E20039C2BA /* ViewController.swift */; };
 		06A14D722074B3E20039C2BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A14D702074B3E20039C2BA /* Main.storyboard */; };
 		06A14D752074B3E20039C2BA /* Keystone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06A14D732074B3E20039C2BA /* Keystone.xcdatamodeld */; };
 		06A14D772074B3E20039C2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A14D762074B3E20039C2BA /* Assets.xcassets */; };
 		06A14D7A2074B3E20039C2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A14D782074B3E20039C2BA /* LaunchScreen.storyboard */; };
-		0885058B207EBBEA00900E9A /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0885058A207EBBEA00900E9A /* TicketViewController.swift */; };
 		088952B6207D903300F64BA5 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088952B4207D903300F64BA5 /* HomeCollectionViewCell.swift */; };
 		088952B7207D903300F64BA5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088952B5207D903300F64BA5 /* HomeViewController.swift */; };
 		088952BA207D905D00F64BA5 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 088952B8207D905D00F64BA5 /* Base.lproj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06417AC62087C14D0043BDB5 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		06417AC82087C25E0043BDB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06417ACA2087DBDB0043BDB5 /* ApiHttpPostUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHttpPostUtil.swift; sourceTree = "<group>"; };
 		06A14D692074B3E20039C2BA /* Keystone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keystone.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		06A14D6C2074B3E20039C2BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06A14D6E2074B3E20039C2BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		06A14D712074B3E20039C2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06A14D742074B3E20039C2BA /* Keystone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Keystone.xcdatamodel; sourceTree = "<group>"; };
 		06A14D762074B3E20039C2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06A14D792074B3E20039C2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06A14D7B2074B3E20039C2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0885058A207EBBEA00900E9A /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		088952B4207D903300F64BA5 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		088952B5207D903300F64BA5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		088952B8207D905D00F64BA5 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
@@ -65,11 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				088952B8207D905D00F64BA5 /* Base.lproj */,
-				088952B4207D903300F64BA5 /* HomeCollectionViewCell.swift */,
-				0885058A207EBBEA00900E9A /* TicketViewController.swift */,
-				088952B5207D903300F64BA5 /* HomeViewController.swift */,
-				06A14D6C2074B3E20039C2BA /* AppDelegate.swift */,
+				06417AC82087C25E0043BDB5 /* AppDelegate.swift */,
 				06A14D6E2074B3E20039C2BA /* ViewController.swift */,
+				088952B5207D903300F64BA5 /* HomeViewController.swift */,
+				088952B4207D903300F64BA5 /* HomeCollectionViewCell.swift */,
+				06417AC62087C14D0043BDB5 /* TicketViewController.swift */,
+				06417ACA2087DBDB0043BDB5 /* ApiHttpPostUtil.swift */,
 				06A14D702074B3E20039C2BA /* Main.storyboard */,
 				06A14D762074B3E20039C2BA /* Assets.xcassets */,
 				06A14D782074B3E20039C2BA /* LaunchScreen.storyboard */,
@@ -152,11 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06417AC92087C25E0043BDB5 /* AppDelegate.swift in Sources */,
 				088952B7207D903300F64BA5 /* HomeViewController.swift in Sources */,
 				06A14D6F2074B3E20039C2BA /* ViewController.swift in Sources */,
-				0885058B207EBBEA00900E9A /* TicketViewController.swift in Sources */,
+				06417ACB2087DBDB0043BDB5 /* ApiHttpPostUtil.swift in Sources */,
+				06417AC72087C14D0043BDB5 /* TicketViewController.swift in Sources */,
 				06A14D752074B3E20039C2BA /* Keystone.xcdatamodeld in Sources */,
-				06A14D6D2074B3E20039C2BA /* AppDelegate.swift in Sources */,
 				088952B6207D903300F64BA5 /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
