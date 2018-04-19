@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06417AC72087C14D0043BDB5 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06417AC62087C14D0043BDB5 /* TicketViewController.swift */; };
 		06417AC92087C25E0043BDB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06417AC82087C25E0043BDB5 /* AppDelegate.swift */; };
 		06417ACB2087DBDB0043BDB5 /* ApiHttpPostUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06417ACA2087DBDB0043BDB5 /* ApiHttpPostUtil.swift */; };
 		06A14D6F2074B3E20039C2BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A14D6E2074B3E20039C2BA /* ViewController.swift */; };
@@ -18,10 +17,10 @@
 		088952B6207D903300F64BA5 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088952B4207D903300F64BA5 /* HomeCollectionViewCell.swift */; };
 		088952B7207D903300F64BA5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088952B5207D903300F64BA5 /* HomeViewController.swift */; };
 		088952BA207D905D00F64BA5 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 088952B8207D905D00F64BA5 /* Base.lproj */; };
+		08A41A1E20881875009755E6 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A41A1D20881875009755E6 /* TicketViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06417AC62087C14D0043BDB5 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		06417AC82087C25E0043BDB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06417ACA2087DBDB0043BDB5 /* ApiHttpPostUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHttpPostUtil.swift; sourceTree = "<group>"; };
 		06A14D692074B3E20039C2BA /* Keystone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keystone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +33,7 @@
 		088952B4207D903300F64BA5 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		088952B5207D903300F64BA5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		088952B8207D905D00F64BA5 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
+		08A41A1D20881875009755E6 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 				06A14D6E2074B3E20039C2BA /* ViewController.swift */,
 				088952B5207D903300F64BA5 /* HomeViewController.swift */,
 				088952B4207D903300F64BA5 /* HomeCollectionViewCell.swift */,
-				06417AC62087C14D0043BDB5 /* TicketViewController.swift */,
+				08A41A1D20881875009755E6 /* TicketViewController.swift */,
 				06417ACA2087DBDB0043BDB5 /* ApiHttpPostUtil.swift */,
 				06A14D702074B3E20039C2BA /* Main.storyboard */,
 				06A14D762074B3E20039C2BA /* Assets.xcassets */,
@@ -159,7 +159,7 @@
 				088952B7207D903300F64BA5 /* HomeViewController.swift in Sources */,
 				06A14D6F2074B3E20039C2BA /* ViewController.swift in Sources */,
 				06417ACB2087DBDB0043BDB5 /* ApiHttpPostUtil.swift in Sources */,
-				06417AC72087C14D0043BDB5 /* TicketViewController.swift in Sources */,
+				08A41A1E20881875009755E6 /* TicketViewController.swift in Sources */,
 				06A14D752074B3E20039C2BA /* Keystone.xcdatamodeld in Sources */,
 				088952B6207D903300F64BA5 /* HomeCollectionViewCell.swift in Sources */,
 			);
