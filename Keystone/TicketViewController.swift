@@ -16,6 +16,9 @@ class TicketViewController: UIViewController,UITableViewDelegate,UITableViewData
     var tickets = [Ticket]()
     
     override func viewDidLoad() {
+        TicketView.delegate = nil
+        TicketView.dataSource = nil
+        
         super.viewDidLoad()
         
         let parameters:Parameters = [
@@ -59,8 +62,10 @@ class TicketViewController: UIViewController,UITableViewDelegate,UITableViewData
                                                                   ticket_created_datetime: singleTicket["ticket_created_datetime"] as! String,
                                                                   device_id: singleTicket["device_id"] as! String
                                                                   ))
-                                            //print(self.tickets.count)
                                         }
+                                        print("----------" + String(self.tickets.count))
+                                        self.TicketView.delegate = self
+                                        self.TicketView.dataSource = self
                                         //print("------------------------------")
                                     }
                                 }
@@ -75,10 +80,12 @@ class TicketViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ticket", for: indexPath)
-        
-        // Configure the cell...
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ticket", for: indexPath) as! TicketViewCell
+        cell.ticket_id.text = tickets[indexPath.row].ticket_id!
+        cell.ticket_status.text = tickets[indexPath.row].ticket_status!
+        cell.ticket_date.text = tickets[indexPath.row].ticket_created_datetime!
+        cell.ticket_priority.text = tickets[indexPath.row].ticket_priority!
+        cell.ticket_description.text = tickets[indexPath.row].ticket_description!
         return cell
     }
     
@@ -87,7 +94,7 @@ class TicketViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.tickets.count
     }
     
 }

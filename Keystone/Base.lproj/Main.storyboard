@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -168,32 +168,67 @@
                                 <rect key="frame" x="0.0" y="63" width="414" height="673"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ticket" textLabel="ldT-PA-GQ3" detailTextLabel="Fef-ig-9bN" style="IBUITableViewCellStyleValue1" id="guM-tg-BXm">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ticket" rowHeight="85" id="guM-tg-BXm" customClass="TicketViewCell" customModule="Keystone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="guM-tg-BXm" id="uoh-34-wv9">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="84.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ldT-PA-GQ3">
-                                                    <rect key="frame" x="15" y="11.999999999999998" width="33.333333333333336" height="20.333333333333332"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pcb-Cd-EEh">
+                                                    <rect key="frame" x="26.666666666666671" y="32" width="50" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fef-ig-9bN">
-                                                    <rect key="frame" x="355" y="11.999999999999998" width="44" height="20.333333333333332"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iEf-1F-sh6">
+                                                    <rect key="frame" x="147.66666666666666" y="32" width="36" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Priority" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AAe-Hw-Zf9">
+                                                    <rect key="frame" x="345" y="6.3333333333333321" width="55" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qvz-aZ-2Gu">
+                                                    <rect key="frame" x="91.666666666666671" y="64.666666666666671" width="65.000000000000014" height="14.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ticket ID: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZ4-8m-qdt">
+                                                    <rect key="frame" x="11" y="6" width="81.333333333333329" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="1" green="0.68569299011938645" blue="0.45439749822965636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="pcb-Cd-EEh" firstAttribute="centerY" secondItem="uoh-34-wv9" secondAttribute="centerY" id="0bO-GS-eLF"/>
+                                                <constraint firstItem="AAe-Hw-Zf9" firstAttribute="centerY" secondItem="uoh-34-wv9" secondAttribute="centerY" multiplier="0.4" id="1EX-Tw-vpL"/>
+                                                <constraint firstItem="qvz-aZ-2Gu" firstAttribute="centerY" secondItem="uoh-34-wv9" secondAttribute="centerY" multiplier="1.7" id="2fv-WL-GAN"/>
+                                                <constraint firstItem="iEf-1F-sh6" firstAttribute="centerX" secondItem="uoh-34-wv9" secondAttribute="centerX" multiplier="0.8" id="HD9-nb-0bc"/>
+                                                <constraint firstItem="pcb-Cd-EEh" firstAttribute="centerX" secondItem="uoh-34-wv9" secondAttribute="centerX" multiplier="0.25" id="LaI-mZ-Nrh"/>
+                                                <constraint firstItem="hZ4-8m-qdt" firstAttribute="centerY" secondItem="uoh-34-wv9" secondAttribute="centerY" multiplier="0.4" id="Nff-P2-HWy"/>
+                                                <constraint firstItem="AAe-Hw-Zf9" firstAttribute="centerX" secondItem="uoh-34-wv9" secondAttribute="centerX" multiplier="1.8" id="nRy-9h-57p"/>
+                                                <constraint firstItem="iEf-1F-sh6" firstAttribute="centerY" secondItem="uoh-34-wv9" secondAttribute="centerY" id="oJX-8Z-Pyd"/>
+                                                <constraint firstItem="hZ4-8m-qdt" firstAttribute="centerX" secondItem="uoh-34-wv9" secondAttribute="centerX" multiplier="0.25" id="svf-uT-Ma5"/>
+                                                <constraint firstItem="qvz-aZ-2Gu" firstAttribute="centerX" secondItem="uoh-34-wv9" secondAttribute="centerX" multiplier="0.6" id="ySk-eo-moq"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="ticket_date" destination="iEf-1F-sh6" id="fbf-oL-nd9"/>
+                                            <outlet property="ticket_description" destination="qvz-aZ-2Gu" id="uwm-DS-O7D"/>
+                                            <outlet property="ticket_id" destination="hZ4-8m-qdt" id="NhW-hH-AOv"/>
+                                            <outlet property="ticket_priority" destination="AAe-Hw-Zf9" id="Tb1-Il-IQe"/>
+                                            <outlet property="ticket_status" destination="pcb-Cd-EEh" id="hKD-ev-BKU"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -230,7 +265,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jso-Ko-jcx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="715.94202898550725" y="-119.0217391304348"/>
+            <point key="canvasLocation" x="714.49275362318849" y="-119.0217391304348"/>
         </scene>
     </scenes>
     <resources>

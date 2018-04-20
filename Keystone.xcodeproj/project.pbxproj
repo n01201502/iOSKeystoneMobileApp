@@ -14,6 +14,7 @@
 		06A14D752074B3E20039C2BA /* Keystone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06A14D732074B3E20039C2BA /* Keystone.xcdatamodeld */; };
 		06A14D772074B3E20039C2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A14D762074B3E20039C2BA /* Assets.xcassets */; };
 		06A14D7A2074B3E20039C2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A14D782074B3E20039C2BA /* LaunchScreen.storyboard */; };
+		06BFE2AB2089EE1A0027C259 /* TicketViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFE2AA2089EE1A0027C259 /* TicketViewCell.swift */; };
 		06F079BE2089845400B7426B /* ObjectMapper.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 06F079AE208983E400B7426B /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		06F07A0A20898AE100B7426B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F079FD2089887700B7426B /* Alamofire.framework */; };
 		06F07A0B20898AE100B7426B /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 06F079FD2089887700B7426B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -174,6 +175,7 @@
 		06A14D762074B3E20039C2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06A14D792074B3E20039C2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06A14D7B2074B3E20039C2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06BFE2AA2089EE1A0027C259 /* TicketViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewCell.swift; sourceTree = "<group>"; };
 		06F079A3208983E400B7426B /* ObjectMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectMapper.xcodeproj; path = ObjectMapper/ObjectMapper.xcodeproj; sourceTree = "<group>"; };
 		06F079F12089887700B7426B /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		088952B4207D903300F64BA5 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -222,13 +224,14 @@
 				088952B5207D903300F64BA5 /* HomeViewController.swift */,
 				088952B4207D903300F64BA5 /* HomeCollectionViewCell.swift */,
 				08A41A1D20881875009755E6 /* TicketViewController.swift */,
+				06BFE2AA2089EE1A0027C259 /* TicketViewCell.swift */,
+				08DE4AC520886E6900BC8EA0 /* Ticket.swift */,
 				06417ACA2087DBDB0043BDB5 /* ApiHttpPostUtil.swift */,
 				06A14D702074B3E20039C2BA /* Main.storyboard */,
 				06A14D762074B3E20039C2BA /* Assets.xcassets */,
 				06A14D782074B3E20039C2BA /* LaunchScreen.storyboard */,
 				06A14D7B2074B3E20039C2BA /* Info.plist */,
 				06A14D732074B3E20039C2BA /* Keystone.xcdatamodeld */,
-				08DE4AC520886E6900BC8EA0 /* Ticket.swift */,
 			);
 			path = Keystone;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06417AC92087C25E0043BDB5 /* AppDelegate.swift in Sources */,
+				06BFE2AB2089EE1A0027C259 /* TicketViewCell.swift in Sources */,
 				088952B7207D903300F64BA5 /* HomeViewController.swift in Sources */,
 				06A14D6F2074B3E20039C2BA /* ViewController.swift in Sources */,
 				08DE4AC620886E6900BC8EA0 /* Ticket.swift in Sources */,
