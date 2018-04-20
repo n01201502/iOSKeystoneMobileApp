@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Ticket{
+class Ticket:Mappable{
     var ticket_id: Int?
     var incident_type: Int?
     var ticket_type: String?
