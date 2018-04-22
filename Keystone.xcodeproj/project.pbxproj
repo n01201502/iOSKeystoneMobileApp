@@ -23,6 +23,7 @@
 		A190A2FD208C5B1B004F9152 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A190A2F0208C5B0F004F9152 /* Alamofire.framework */; };
 		A190A2FE208C5B1B004F9152 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A190A2F0208C5B0F004F9152 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A190A302208C5E3A004F9152 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A190A301208C5E3A004F9152 /* Login.swift */; };
+		A190A304208D0C33004F9152 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A190A303208D0C33004F9152 /* ContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		08DE4AC520886E6900BC8EA0 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		A190A2E4208C5B0E004F9152 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		A190A301208C5E3A004F9152 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		A190A303208D0C33004F9152 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +135,6 @@
 		06A14D602074B3E20039C2BA = {
 			isa = PBXGroup;
 			children = (
-				A190A301208C5E3A004F9152 /* Login.swift */,
 				06A14D6B2074B3E20039C2BA /* Keystone */,
 				06A14D6A2074B3E20039C2BA /* Products */,
 				A190A2E4208C5B0E004F9152 /* Alamofire.xcodeproj */,
@@ -154,6 +155,8 @@
 				088952B8207D905D00F64BA5 /* Base.lproj */,
 				06417AC82087C25E0043BDB5 /* AppDelegate.swift */,
 				06A14D6E2074B3E20039C2BA /* ViewController.swift */,
+				A190A301208C5E3A004F9152 /* Login.swift */,
+				A190A303208D0C33004F9152 /* ContactViewController.swift */,
 				088952B5207D903300F64BA5 /* HomeViewController.swift */,
 				088952B4207D903300F64BA5 /* HomeCollectionViewCell.swift */,
 				08A41A1D20881875009755E6 /* TicketViewController.swift */,
@@ -217,6 +220,7 @@
 				TargetAttributes = {
 					06A14D682074B3E20039C2BA = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -322,6 +326,7 @@
 				088952B7207D903300F64BA5 /* HomeViewController.swift in Sources */,
 				06A14D6F2074B3E20039C2BA /* ViewController.swift in Sources */,
 				08DE4AC620886E6900BC8EA0 /* Ticket.swift in Sources */,
+				A190A304208D0C33004F9152 /* ContactViewController.swift in Sources */,
 				06417ACB2087DBDB0043BDB5 /* ApiHttpPostUtil.swift in Sources */,
 				08A41A1E20881875009755E6 /* TicketViewController.swift in Sources */,
 				06A14D752074B3E20039C2BA /* Keystone.xcdatamodeld in Sources */,
@@ -471,11 +476,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Keystone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.softchoice.Keystone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -486,6 +493,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Keystone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
