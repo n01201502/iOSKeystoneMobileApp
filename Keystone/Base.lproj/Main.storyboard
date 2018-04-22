@@ -296,7 +296,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Tickets" id="bRZ-Lp-UjV">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="yVC-SU-IBd">
+                                        <barButtonItem key="leftBarButtonItem" image="ic_back" style="done" id="yVC-SU-IBd">
                                             <connections>
                                                 <segue destination="pav-dz-z9U" kind="show" id="bAc-OZ-Ygq"/>
                                             </connections>
@@ -324,6 +324,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_back" width="24" height="24"/>
         <image name="ic_date" width="72" height="72"/>
         <image name="ic_logo" width="461" height="193"/>
         <image name="ic_logo_keystone" width="250" height="143"/>

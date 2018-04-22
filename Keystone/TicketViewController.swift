@@ -63,9 +63,10 @@ class TicketViewController: UIViewController,UITableViewDelegate,UITableViewData
                                                                   device_id: singleTicket["device_id"] as! String
                                                                   ))
                                         }
-                                        print("----------" + String(self.tickets.count))
+                                        //print("----------" + String(self.tickets.count))
                                         self.TicketView.delegate = self
                                         self.TicketView.dataSource = self
+                                        self.TicketView.reloadData()
                                         //print("------------------------------")
                                     }
                                 }
