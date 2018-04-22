@@ -8,9 +8,8 @@
 
 import UIKit
 import Alamofire
-import ObjectMapper
 
-class TicketViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class TicketViewController: UIViewController,UITableViewDelegate {
     
     @IBOutlet weak var TicketView: UITableView!
     var tickets = [Ticket]()
@@ -65,7 +64,7 @@ class TicketViewController: UIViewController,UITableViewDelegate,UITableViewData
                                         }
                                         //print("----------" + String(self.tickets.count))
                                         self.TicketView.delegate = self
-                                        self.TicketView.dataSource = self
+                                        //self.TicketView.dataSource = self
                                         self.TicketView.reloadData()
                                         //print("------------------------------")
                                     }

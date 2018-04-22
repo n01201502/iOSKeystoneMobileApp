@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ObjectMapper
 
 class Ticket{
     var ticket_id: String?

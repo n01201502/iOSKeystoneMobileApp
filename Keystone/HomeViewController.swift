@@ -47,7 +47,11 @@ class HomeViewController: UIViewController,UICollectionViewDataSource, UICollect
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Cell Clicked with Index: " + String(indexPath.row))
         if(indexPath.row == 3) {
-                performSegue(withIdentifier: "toTicketViewController", sender: nil)
+            performSegue(withIdentifier: "toTicketViewController", sender: nil)
+        } else if(indexPath.row == 0) {
+            performSegue(withIdentifier: "toProfileViewController", sender: nil)
+        } else if(indexPath.row == 5) {
+            performSegue(withIdentifier: "toContactViewController", sender: nil)
         }
     }
     
