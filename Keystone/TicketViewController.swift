@@ -18,7 +18,7 @@ class TicketViewController: UIViewController,UITableViewDelegate,UITableViewData
     override func viewDidLoad() {
         TicketView.delegate = nil
         TicketView.dataSource = nil
-        
+         
         super.viewDidLoad()
         
         let parameters:Parameters = [
@@ -81,11 +81,28 @@ class TicketViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ticket", for: indexPath) as! TicketViewCell
-        cell.ticket_id.text = tickets[indexPath.row].ticket_id!
+        cell.ticket_id.text = tickets[indexPath.row].incident_type! + "-" + tickets[indexPath.row].ticket_id!
         cell.ticket_status.text = tickets[indexPath.row].ticket_status!
         cell.ticket_date.text = tickets[indexPath.row].ticket_created_datetime!
         cell.ticket_priority.text = tickets[indexPath.row].ticket_priority!
+        
         cell.ticket_description.text = tickets[indexPath.row].ticket_description!
+        
+        let origImage = UIImage(named: "ic_status")
+        let tintedImage = origImage?.withRenderingMode(.alwaysTemplate)
+        cell.status_btn.image = tintedImage
+        cell.status_btn.tintColor = .orange
+        
+        let origImage1 = UIImage(named: "ic_priority")
+        let tintedImage1 = origImage1?.withRenderingMode(.alwaysTemplate)
+        cell.priority_btn.image = tintedImage1
+        cell.priority_btn.tintColor = .orange
+        
+        let origImage2 = UIImage(named: "ic_date")
+        let tintedImage2 = origImage2?.withRenderingMode(.alwaysTemplate)
+        cell.date_btn.image = tintedImage2
+        cell.date_btn.tintColor = .orange
+        
         return cell
     }
     
